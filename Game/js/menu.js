@@ -152,7 +152,7 @@ class MobileMenu extends Component {
 
 
         return (
-            <section className="mobile">
+            <section className="menuApp">
                 <header className="mobile-menu">
                     {/*<a href="#" className="open-menu" onMouseEnter={this.handleMouseOn}></a>*/}
                     <nav className={navClass}>

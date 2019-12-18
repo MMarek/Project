@@ -4,6 +4,12 @@
   box-sizing: border-box;
 }
 
+#app {
+  display: flex;
+  justify-content: center;
+  box-shadow: 0 0 8px 2px rgba(0, 0, 0, 0.3);
+
+}
 body {
   margin: 0;
   padding: 0;
@@ -19,7 +25,7 @@ a {
   color: #333030;
 }
 
-.mobile {
+.menuApp {
   width: 360px;
   height: 640px;
   border-radius: 4px;
@@ -39,15 +45,15 @@ a {
   border-top-right-radius: 4px;
 }
 
-.mobile-menu .open-menu {
-  background: url("https://upload.wikimedia.org/wikipedia/commons/b/b2/Hamburger_icon.svg");
-  background-size: contain;
-  background-repeat: no-repeat;
-  width: 32px;
-  height: 32px;
-  display: block;
-  color: transparent;
-}
+//.mobile-menu .open-menu {
+//  background: url("https://upload.wikimedia.org/wikipedia/commons/b/b2/Hamburger_icon.svg");
+//  background-size: contain;
+//  background-repeat: no-repeat;
+//  width: 32px;
+//  height: 32px;
+//  display: block;
+//  color: transparent;
+//}
 
 //nav {
 //  transition: 3s;
@@ -82,15 +88,132 @@ a {
 }
 
 //.mobile-menu nav .close-menu {
-  //margin-top: 60px;
-  //text-decoration: none;
-  //font-size: 0.8rem;
-  //color: #fbbb21;
-  //border: 2px solid #fbbb21;
-  //padding: 8px 22px;
-  //border-radius: 8px;
+//margin-top: 60px;
+//text-decoration: none;
+//font-size: 0.8rem;
+//color: #fbbb21;
+//border: 2px solid #fbbb21;
+//padding: 8px 22px;
+//border-radius: 8px;
 //}
 
 .mobile-menu nav.hide {
   display: none;
 }
+
+.menuAppJeden {
+  width: 800px;
+  height: 500px;
+}
+
+.menuAppJedenDiv {
+  //width: 800px;
+  //height: 500px;
+  border-radius: 4px;
+  background: white;
+  //box-shadow: 0 0 8px 2px rgba(0, 0, 0, 0.3);
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+.menuAppJedenDiv div {
+  width: 380px;
+  height: 290px;
+  border-radius: 5px;
+  box-shadow: 0 0 5px 3px rgba(0, 0, 0, 0.5);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.menuAppJeden-rightDiv button {
+  width: 70%;
+  padding: 10px;
+  box-shadow: 0 0 1px 1px rgba(0, 0, 0, 1);
+}
+
+.menuAppJedenP {
+  display: flex;
+  justify-content: center;
+  //color: #524f4f;
+  padding: 12px;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+
+.menuAppJeden-rightDiv textarea {
+  height: 50%;
+  width: 100%;
+}
+
+
+.menuAppJeden-rightDiv input {
+  height: 30%;
+  width: 100%;
+}
+
+
+.menuAppDwa {
+  width: 700px;
+  height: 850px;
+  background: white;
+  border-radius: 5px;
+  box-shadow: 0 0 5px 3px rgba(0, 0, 0, 0.5);
+  position: relative;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.menuAppDwaRodzic {
+  width: 680px;
+  height: 550px;
+  border-radius: 4px;
+  background: white;
+  box-shadow: 0 0 8px 2px rgba(0, 0, 0, 0.3);
+  position: relative;
+  padding: 30px;
+  //display: flex;
+  //flex-direction: row;
+  //justify-content: space-between;
+}
+
+.menuAppDwaRodzic div {
+  //margin-top: 60px;
+  //text-decoration: none;
+  //width: 30%;
+  font-size: 2rem;
+  color: black;
+  border: 2px solid black;
+  padding: 8px 22px;
+  border-radius: 8px;
+}
+
+.menuAppDwa input {
+  width: 680px;
+  height: 30px;
+  border-radius: 4px;
+  background: white;
+  box-shadow: 0 0 8px 2px rgba(0, 0, 0, 0.3);
+  position: relative;
+  padding: 15px;
+}
+
+.menuAppDwa textarea {
+  width: 680px;
+  height: 200px;
+  border-radius: 4px;
+  background: white;
+  box-shadow: 0 0 8px 2px rgba(0, 0, 0, 0.3);
+  position: relative;
+  padding: 20px;
+  justify-content: center;
+}
+
+
+
