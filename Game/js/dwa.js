@@ -1,10 +1,11 @@
 import React, {Component} from "react";
 import ReactDOM from "react-dom";
 import './../sass/style.scss';
+// import  {Link} from 'react-router-dom';
 import parse from 'style-to-object';
 
 
-class MobileMenu extends Component {
+class Dwa extends Component {
 
     state = {
         text: '',
@@ -78,8 +79,8 @@ class MobileMenu extends Component {
 }
 
 function App() {
-    return <MobileMenu/>
+    return <Dwa/>
 }
 
 
-ReactDOM.render(<App/>, document.getElementById("app"));
+ReactDOM.render(<App/>,document.getElementById("app"));

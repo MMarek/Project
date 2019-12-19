@@ -1,6 +1,12 @@
 import React, {Component} from "react";
 import ReactDOM from "react-dom";
 import './../sass/style.scss'
+// import {
+//     HashRouter,
+//     Route,
+//     Link,
+// } from 'react-router-dom';
+
 
 class MobileMenu extends Component {
 
@@ -28,12 +34,12 @@ class MobileMenu extends Component {
     // }
 
     handleButtonOneOn = () => {
-        this.setState({one:true});
+        this.setState({one: true});
         console.log('najazd');
     }
 
     handleButtonOneOff = () => {
-        this.setState({one:false});
+        this.setState({one: false});
         console.log('zjazd');
     }
 
@@ -42,12 +48,12 @@ class MobileMenu extends Component {
     }
 
     handleButtonTwoOn = () => {
-        this.setState({two:true});
+        this.setState({two: true});
         console.log('najazd');
     }
 
     handleButtonTwoOff = () => {
-        this.setState({two:false});
+        this.setState({two: false});
         console.log('zjazd');
     }
 
@@ -57,12 +63,12 @@ class MobileMenu extends Component {
     }
 
     handleButtonThreeOn = () => {
-        this.setState({three:true});
+        this.setState({three: true});
         console.log('najazd');
     }
 
     handleButtonThreeOff = () => {
-        this.setState({three:false});
+        this.setState({three: false});
         console.log('zjazd');
     }
 
@@ -72,12 +78,12 @@ class MobileMenu extends Component {
     }
 
     handleButtonFourOn = () => {
-        this.setState({four:true});
+        this.setState({four: true});
         console.log('najazd');
     }
 
     handleButtonFourOff = () => {
-        this.setState({four:false});
+        this.setState({four: false});
         console.log('zjazd');
     }
 
@@ -86,12 +92,12 @@ class MobileMenu extends Component {
 
     }
     handleButtonFiveOn = () => {
-        this.setState({five:true});
+        this.setState({five: true});
         console.log('najazd');
     }
 
     handleButtonFiveOff = () => {
-        this.setState({five:false});
+        this.setState({five: false});
         console.log('zjazd');
     }
 
@@ -139,16 +145,15 @@ class MobileMenu extends Component {
             fontSize: five ? '100px' : '20px',
             height: five ? '20px' : '40px',
             color: five ? 'red' : 'black',
-             // five ? '8px' : ' 20px',
+            // five ? '8px' : ' 20px',
             transition: "5s",
             // margin-top: 60px;
             // text-decoration: 'none';
-        // font-size: 0.8rem;
-        // color: '#fbbb21',
-        // border: '2px solid #fbbb21',
-        // padding: '8px 22p',
+            // font-size: 0.8rem;
+            // color: '#fbbb21',
+            // border: '2px solid #fbbb21',
+            // padding: '8px 22p',
         }
-
 
 
         return (
@@ -160,7 +165,11 @@ class MobileMenu extends Component {
                             <li><a style={styleButtonOne} href="#"
                                    onClick={this.handleButtonOneClick}
                                    onMouseEnter={this.handleButtonOneOn}
-                                   onMouseLeave={this.handleButtonOneOff}>Jeden</a></li>
+                                   onMouseLeave={this.handleButtonOneOff}>
+
+                                {/*<Link to='/jeden'>Jeden</Link>*/}
+
+                            Jeden</a></li>
                             <li><a style={styleButtonTwo} href="#"
                                    onClick={this.handleButtonTwoClick}
                                    onMouseEnter={this.handleButtonTwoOn}
@@ -175,7 +184,7 @@ class MobileMenu extends Component {
                                    onMouseLeave={this.handleButtonFourOff}>Cztery</a></li>
                         </ul>
                         <a style={styleButtonFive}
-                           // href="#" className="close-menu"
+                            // href="#" className="close-menu"
                            onClick={this.handleButtonFiveClick}
                            onMouseEnter={this.handleButtonFiveOn}
                            onMouseLeave={this.handleButtonFiveOff}>Guzik</a>
@@ -188,6 +197,13 @@ class MobileMenu extends Component {
 
 function App() {
     return <MobileMenu/>
+    {/*<HashRouter>*/}
+        {/*<Route exact path='/' component={MobileMenu}/>*/}
+        {/*<Route path='./jeden.js' component={jeden}/>*/}
+        {/*<Route path='/dwa' component={Dwa}/>*/}
+        {/*<Route path='/trzy' component={Trzy}/>*/}
+    {/*</HashRouter>*/}
+
 }
 
 

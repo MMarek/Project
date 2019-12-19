@@ -10,6 +10,7 @@
   box-shadow: 0 0 8px 2px rgba(0, 0, 0, 0.3);
 
 }
+
 body {
   margin: 0;
   padding: 0;
@@ -18,6 +19,11 @@ body {
   align-items: center;
   height: 100vh;
   font-family: "Lato", sans-serif;
+  background-image: url("../foto/IMG_0297.jpg");
+
+  background-size: cover;
+  width: 100%;
+  position: absolute;
 }
 
 a {
@@ -215,5 +221,67 @@ a {
   justify-content: center;
 }
 
+.menuAppTrzy {
+  width: 800px;
+  height: 600px;
+  border-radius: 4px;
+  background: white;
+  box-shadow: 0 0 8px 2px rgba(0, 0, 0, 0.3);
+  position: relative;
+  padding: 30px;
+  display: flex;
+  justify-content: space-between;
+  padding-right: 60px;
+}
 
+.menuAppTrzyTree {
+  width: 400px;
+  height: 540px;
+  border-radius: 5px;
+  box-shadow: 0 0 5px 3px rgba(0, 0, 0, 0.5);
+  padding: 20px;
+}
 
+.sectionAppThreeRight {
+  display: flex;
+  flex-direction: column;
+}
+
+.menuAppTrzy p {
+  //display: inline-block;
+  color: #524f4f;
+  padding-left: 70px;
+  font-size: 1.4rem;
+  //font-weight: 700;
+}
+
+.menuAppTrzy input {
+  width: 250px;
+  height: 30px;
+  border-radius: 5px;
+  box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.5);
+  padding: 30px;
+  margin-top: 30px;
+  font-size: 25px;
+}
+
+.sectionAppThreeRight button {
+  width: 80px;
+  height: 20px;
+  border-radius: 4px;
+  background: white;
+  box-shadow: 0 0 8px 2px rgba(0, 0, 0, 0.3);
+  position: relative;
+  left: 150px;
+  top: 15px;
+}
+
+//.sectionAppThreeRight :last-child {
+//  height: 300px;
+//  border-radius: 5px;
+//  font-size: 40px;
+  //box-shadow: 0 0 0 1px rgba(1, 1, 1, 0.5);
+  //padding: 30px;
+  //margin-top: 30px;
+  //font-size: 25px;
+//}
