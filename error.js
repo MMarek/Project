@@ -1,3 +1,6 @@
+import {NavLink} from "react-router-dom";
+import React from "react";
+
 state = {
     on:true
 };
@@ -342,3 +345,44 @@ import ReactDOM from "react-dom";
         }
     }
     ReactDOM.render(<App/>, document.getElementById("app"));
+
+
+
+///////////////////
+
+    <li style={styleButtonThree} href="#"
+        onClick={this.handleButtonThreeClick}
+        onMouseEnter={this.handleButtonThreeOn}
+        onMouseLeave={this.handleButtonThreeOff}>
+        <NavLink to='/trzy'>Trzy</NavLink>
+    </li>
+
+
+    let styleButtonOne = {
+        fontSize: one ? '100px' : '20px',
+        // height: one ? '20px' : '40px',
+        // color: one ? 'red' : 'black',
+        transition: "5s",
+    }
+
+
+    const {one} = this.state;
+    const {two} = this.state;
+    const {three} = this.state;
+    const {four} = this.state;
+
+
+
+    handleButtonOneOn = () => {
+        this.setState({one: true});
+        console.log('najazd');
+    }
+
+    handleButtonOneOff = () => {
+        this.setState({one: false});
+        console.log('zjazd');
+    }
+
+    handleButtonOneClick = () => {
+        console.log('klik jeden');
+    }

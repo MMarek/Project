@@ -3,6 +3,7 @@ import ReactDOM from "react-dom";
 import './../sass/style.scss';
 // import  {Link} from 'react-router-dom';
 import parse from 'style-to-object';
+import {NavLink} from "react-router-dom";
 
 
 class Dwa extends Component {
@@ -63,6 +64,7 @@ class Dwa extends Component {
 
 
         return (
+            <>
             <section className="menuAppDwa">
 
                 <div className="menuAppDwaRodzic" style={objStyles}>{addDiv}
@@ -74,13 +76,21 @@ class Dwa extends Component {
                           placeholder={'Wrpowadź wartości'}></textarea>
 
             </section>
+                <section>
+                    <div className='backDwa'>
+                        <NavLink to='/'>Wróć</NavLink>
+                    </div>
+                </section>
+            </>
         )
     }
 }
 
-function App() {
-    return <Dwa/>
-}
+export default Dwa;
 
-
-ReactDOM.render(<App/>,document.getElementById("app"));
+// function App() {
+//     return <Dwa/>
+// }
+//
+//
+// ReactDOM.render(<App/>,document.getElementById("app"));

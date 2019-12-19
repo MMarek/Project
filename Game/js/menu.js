@@ -1,14 +1,19 @@
 import React, {Component} from "react";
 import ReactDOM from "react-dom";
 import './../sass/style.scss'
-// import {
-//     HashRouter,
-//     Route,
-//     Link,
-// } from 'react-router-dom';
+import {
+    HashRouter,
+    Route,
+    Link,
+    NavLink,
+} from 'react-router-dom';
+
+// import jeden from "./jeden";
+// import dwa from './dwa';
+// import trzy from './trzy';
 
 
-class MobileMenu extends Component {
+class Menu extends Component {
 
     state = {
         open: true,
@@ -118,20 +123,20 @@ class MobileMenu extends Component {
 
         let styleButtonOne = {
             fontSize: one ? '100px' : '20px',
-            height: one ? '20px' : '40px',
-            // color: one ? 'red' : 'black',
+            // height: one ? '20px' : '40px',
+            color: one ? 'red' : 'black',
             transition: "5s",
         }
 
         let styleButtonTwo = {
             fontSize: two ? '100px' : '20px',
-            height: two ? '20px' : '40px',
+            // height: two ? '20px' : '40px',
             // color: one ? 'red' : 'black',
             transition: "5s",
         }
         let styleButtonThree = {
             fontSize: three ? '100px' : '20px',
-            height: three ? '20px' : '40px',
+            // height: three ? '20px' : '40px',
             // color: one ? 'red' : 'black',
             transition: "5s",
         }
@@ -162,32 +167,37 @@ class MobileMenu extends Component {
                     {/*<a href="#" className="open-menu" onMouseEnter={this.handleMouseOn}></a>*/}
                     <nav className={navClass}>
                         <ul>
-                            <li><a style={styleButtonOne} href="#"
+                            <li style={styleButtonOne} href="#"
                                    onClick={this.handleButtonOneClick}
                                    onMouseEnter={this.handleButtonOneOn}
                                    onMouseLeave={this.handleButtonOneOff}>
-
-                                {/*<Link to='/jeden'>Jeden</Link>*/}
-
-                            Jeden</a></li>
-                            <li><a style={styleButtonTwo} href="#"
+                                <NavLink to='/jeden'>Styl</NavLink>
+                            </li>
+                            <li style={styleButtonTwo} href="#"
                                    onClick={this.handleButtonTwoClick}
                                    onMouseEnter={this.handleButtonTwoOn}
-                                   onMouseLeave={this.handleButtonTwoOff}>Dwa</a></li>
-                            <li><a style={styleButtonThree} href="#"
+                                   onMouseLeave={this.handleButtonTwoOff}>
+                                <NavLink to='/dwa'>Flex</NavLink>
+                            </li>
+                            <li style={styleButtonThree} href="#"
                                    onClick={this.handleButtonThreeClick}
                                    onMouseEnter={this.handleButtonThreeOn}
-                                   onMouseLeave={this.handleButtonThreeOff}>Trzy</a></li>
-                            <li><a style={styleButtonFour} href="#"
-                                   onClick={this.handleButtonFourClick}
-                                   onMouseEnter={this.handleButtonFourOn}
-                                   onMouseLeave={this.handleButtonFourOff}>Cztery</a></li>
+                                   onMouseLeave={this.handleButtonThreeOff}>
+                                <NavLink to='/trzy'>Selektor</NavLink>
+                            </li>
+                            {/*<li style={styleButtonFour} href="#"*/}
+                            {/*       onClick={this.handleButtonFourClick}*/}
+                            {/*       onMouseEnter={this.handleButtonFourOn}*/}
+                            {/*       onMouseLeave={this.handleButtonFourOff}>*/}
+                            {/*    <NavLink to='/jeden'>Jeden</NavLink>*/}
+                            {/*</li>*/}
                         </ul>
                         <a style={styleButtonFive}
                             // href="#" className="close-menu"
                            onClick={this.handleButtonFiveClick}
                            onMouseEnter={this.handleButtonFiveOn}
-                           onMouseLeave={this.handleButtonFiveOff}>Guzik</a>
+                           onMouseLeave={this.handleButtonFiveOff}>
+                            <NavLink to='/help'>Pomoc</NavLink></a>
                     </nav>
                 </header>
             </section>
@@ -195,16 +205,4 @@ class MobileMenu extends Component {
     }
 }
 
-function App() {
-    return <MobileMenu/>
-    {/*<HashRouter>*/}
-        {/*<Route exact path='/' component={MobileMenu}/>*/}
-        {/*<Route path='./jeden.js' component={jeden}/>*/}
-        {/*<Route path='/dwa' component={Dwa}/>*/}
-        {/*<Route path='/trzy' component={Trzy}/>*/}
-    {/*</HashRouter>*/}
-
-}
-
-
-ReactDOM.render(<App/>, document.getElementById("app"));
+export default Menu;
