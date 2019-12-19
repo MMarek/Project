@@ -29,7 +29,7 @@ class Dwa extends Component {
         e.preventDefault();
         console.log('klik');
 
-        if(this.state.text.length > 0 && this.state.elements.length < 5) {
+        if (this.state.text.length > 0 && this.state.elements.length < 5) {
 
             this.setState({
                 elements: [...this.state.elements, this.state.text],
@@ -65,22 +65,28 @@ class Dwa extends Component {
 
         return (
             <>
-            <section className="menuAppDwa">
+                <section className="menuAppDwa">
 
-                <div className="menuAppDwaRodzic" style={objStyles}>{addDiv}
-                </div>
-                <input onChange={this.handleChange} value={this.state.text}
-                       placeholder={'wymyśl wyraz i kliknij dodaj element'}></input>
-                <button onClick={this.handleButtonClick}>Dodaj Element</button>
+                    <div className="menuAppDwaRodzic" style={objStyles}>{addDiv}</div>
+                    <input onChange={this.handleChange} value={this.state.text}
+                           placeholder={'Wymyśl wyraz i kliknij "Dodaj Element" ( i tak pięć razy :) więcej i tak Ci się nie uda!)'}></input>
+                    <div className="box">
+
                 <textarea value={this.state.styles} onChange={this.handleChangeStyles}
-                          placeholder={'Wrpowadź wartości'}></textarea>
-
-            </section>
-                <section>
-                    <div className='backDwa'>
-                        <NavLink to='/'>Wróć</NavLink>
+                          placeholder={'Wprowadź wartości: Display, Flex-direction, Justify-Content, Align-Items i nie tylko! Wszystkie jakie znasz i na ile sposóbów tylko potrafisz! Ćwicz!! (w razie kłopotów, zajrzyj do zakładki "Pomoc"'}></textarea>
+                       <div className="box2">
+                        <button onClick={this.handleButtonClick}>Dodaj Element</button>
+                           <button><NavLink to='/'>Wróć</NavLink></button>
+                           <p>Flex Training</p>
+                       </div>
                     </div>
+
                 </section>
+                {/*<section>*/}
+                {/*    <div className='backDwa'>*/}
+                {/*<NavLink to='/'>Wróć</NavLink>*/}
+                {/*</div>*/}
+                {/*</section>*/}
             </>
         )
     }

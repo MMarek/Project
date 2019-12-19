@@ -29,7 +29,7 @@ class Trzy extends Component {
         console.log('klik');
         const element = this.root.querySelector(this.state.text);
         if (element) {
-            element.style.border = '1px solid red';
+            element.style.border = '5px solid gray';
         }
     }
 
@@ -75,25 +75,27 @@ class Trzy extends Component {
                         <div className="menuAppTrzyTree">
                             <div className="a">&lt;div class="a"&gt;</div>
                             <div id="main-div">&lt;div id="main-div"&gt;</div>
-                            <div className="c">&lt;div class="c"&gt;</div>
-                            <div className="d">&lt;div class="d"&gt;</div>
-                            <div className="e">&lt;div class="e"&gt;</div>
+
                         </div>
                     </section>
                     <section className="sectionAppThreeRight">
-                        <p>Selector</p>
+                        <p>Selector Chalange</p>
                         <input onChange={this.handleChange} value={this.state.text}
-                               placeholder={'text'}></input>
+                               placeholder={'Wpisz odpowiedni selektor:'}></input>
                         <button onClick={this.handleButtonClick}>Sprawdz</button>
-                        <p></p>
+                        <div> Wprowadź odpowiedni selektor, by zaznaczyć kolejny obiekt.
+                            Nie rezygnuj, aż nie zaznaczysz wszystkich.
+                            W razie kłopotów, wsparcie znajdziesz w 'Pomocy'!
+                        </div>
+                        <button><NavLink to='/'>Wróć</NavLink></button>
 
                     </section>
                 </section>
-                <section>
-                    <div className='backTrzy'>
-                        <NavLink to='/'>Wróć</NavLink>
-                    </div>
-                </section>
+                {/*<section className={'backTrzy'}>*/}
+                {/*    <div>*/}
+                {/*        <NavLink to='/'>Wróć</NavLink>*/}
+                {/*    </div>*/}
+                {/*</section>*/}
             </>
 
         )

@@ -83,12 +83,13 @@ class Jeden extends Component {
                                   placeholder={'Wprowadź zmiany:'}></textarea></div>
                 </section>
                 <section className="menuAppJedenP">
-                    <p className="paragraf">Wprowadź 10 zmian Twojego ulubionego wyrazu..
-                        np: Zmień rozmiar czcionki, jej kolor, przesuń w prawo, umieść w czerwonej ramce, w razie problemów zajrzyj do Pomocy!</p>
+                    <div className="paragraf">Wprowadź 5 zmian Twojego ulubionego wyrazu..
+                        np: Zmień rozmiar czcionki, jej kolor, przesuń w prawo, umieść w czerwonej ramce, wycentruj.
+                        (poszukaj innych rozwiązań.. w razie problemów zajrzyj do Pomocy!)</div>
                 </section>
-                <div className='backJeden'>
+                <p className='backJeden'>
                     <NavLink to='/'>Wróć</NavLink>
-                </div>
+                </p>
             </section>
 
     )

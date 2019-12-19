@@ -8,10 +8,6 @@ import {
     NavLink,
 } from 'react-router-dom';
 
-// import jeden from "./jeden";
-// import dwa from './dwa';
-// import trzy from './trzy';
-
 
 class Menu extends Component {
 
@@ -135,9 +131,9 @@ class Menu extends Component {
             transition: "5s",
         }
         let styleButtonThree = {
-            fontSize: three ? '100px' : '20px',
+            fontSize: three ? '70px' : '20px',
             // height: three ? '20px' : '40px',
-            // color: one ? 'red' : 'black',
+            // color: three ? 'red' : 'black',
             transition: "5s",
         }
         let styleButtonFour = {
@@ -147,7 +143,7 @@ class Menu extends Component {
             transition: "5s",
         }
         let styleButtonFive = {
-            fontSize: five ? '100px' : '20px',
+            fontSize: five ? '80px' : '20px',
             height: five ? '20px' : '40px',
             color: five ? 'red' : 'black',
             // five ? '8px' : ' 20px',
