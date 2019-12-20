@@ -63,7 +63,8 @@ class Jeden extends Component {
 
                 let objStyles = {};
         try {
-            objStyles = parse(this.state.styles);
+            const str = this.state.styles.substr(0,this.state.styles.lastIndexOf(';'))
+            objStyles = parse(str);
             console.log(objStyles);
         } catch (e) {
 

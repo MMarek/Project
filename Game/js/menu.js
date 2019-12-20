@@ -145,7 +145,7 @@ class Menu extends Component {
         let styleButtonFive = {
             fontSize: five ? '80px' : '20px',
             height: five ? '20px' : '40px',
-            color: five ? 'red' : 'black',
+            // color: five ? 'red' : 'black',
             // five ? '8px' : ' 20px',
             transition: "5s",
             // margin-top: 60px;
@@ -188,12 +188,15 @@ class Menu extends Component {
                             {/*    <NavLink to='/jeden'>Jeden</NavLink>*/}
                             {/*</li>*/}
                         </ul>
-                        <a style={styleButtonFive}
-                            // href="#" className="close-menu"
+                        {/*<a style={styleButtonFive}*/}
+                        {/*// href="#" className="close-menu"*/}
+
+                        <NavLink to='/help' style={styleButtonFive}
+
                            onClick={this.handleButtonFiveClick}
                            onMouseEnter={this.handleButtonFiveOn}
                            onMouseLeave={this.handleButtonFiveOff}>
-                            <NavLink to='/help'>Pomoc</NavLink></a>
+                            Pomoc</NavLink>
                     </nav>
                 </header>
             </section>

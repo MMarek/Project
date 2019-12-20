@@ -49,7 +49,7 @@ class Dwa extends Component {
         let objStyles = {};
         const addDiv = this.state.elements.map((item, i) => {
             return (
-                <div key={i}>{item} </div>
+                <div className='flexItem' key={i}>{item} </div>
             )
         });
 
@@ -69,16 +69,19 @@ class Dwa extends Component {
 
                     <div className="menuAppDwaRodzic" style={objStyles}>{addDiv}</div>
                     <input onChange={this.handleChange} value={this.state.text}
-                           placeholder={'Wymyśl wyraz i kliknij "Dodaj Element" ( i tak pięć razy :) więcej i tak Ci się nie uda!)'}></input>
+                           placeholder={'Wymyśl wyraz i kliknij "Dodaj Element"' +
+                           ' ( i tak pięć razy :) więcej i tak Ci się nie uda!)'}></input>
                     <div className="box">
 
-                <textarea value={this.state.styles} onChange={this.handleChangeStyles}
-                          placeholder={'Wprowadź wartości: Display, Flex-direction, Justify-Content, Align-Items i nie tylko! Wszystkie jakie znasz i na ile sposóbów tylko potrafisz! Ćwicz!! (w razie kłopotów, zajrzyj do zakładki "Pomoc"'}></textarea>
-                       <div className="box2">
+                    <textarea value={this.state.styles} onChange={this.handleChangeStyles}
+                              placeholder={'Wprowadź wartości: Display, Flex-direction, Justify-Content, ' +
+                              'Align-Items i nie tylko! Wszystkie jakie znasz i na ile sposóbów tylko potrafisz! ' +
+                              'Ćwicz!! (w razie kłopotów, zajrzyj do zakładki "Pomoc"'}></textarea>
+                    <div className="box2">
                         <button onClick={this.handleButtonClick}>Dodaj Element</button>
-                           <button><NavLink to='/'>Wróć</NavLink></button>
-                           <p>Flex Training</p>
-                       </div>
+                        <button><NavLink to='/'>Wróć</NavLink></button>
+                        <p>Flex Training</p>
+                    </div>
                     </div>
 
                 </section>

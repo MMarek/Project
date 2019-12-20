@@ -30,6 +30,9 @@ class Trzy extends Component {
         const element = this.root.querySelector(this.state.text);
         if (element) {
             element.style.border = '5px solid gray';
+            this.setState({
+                text: ''
+            })
         }
     }
 
@@ -75,7 +78,38 @@ class Trzy extends Component {
                         <div className="menuAppTrzyTree">
                             <div className="a">&lt;div class="a"&gt;</div>
                             <div id="main-div">&lt;div id="main-div"&gt;</div>
-
+                            <div>&lt;el "ul" między divami&gt;</div>
+                            {/*A ~ B*/}
+                            <div>&lt;pierwsze dziecko section&gt;</div>
+                            {/*:first-child*/}
+                            <div>&lt;ostatni paragraf&gt;</div>
+                            {/*:last-child*/}
+                            <div>&lt;pusty div&gt;</div>
+                            {/*:empty*/}
+                            <div>&lt;[atybut^="wartość"]&gt;</div>
+                            {/*atrybut z wartością zaczynającą sie na*/}
+                            <div>&lt;jedyny paragraf&gt;</div>
+                            {/*:only-child*/}
+                            <div>&lt;div i paragraf&gt;</div>
+                            {/*A, B*/}
+                            <div>&lt;pierwszy z typu&gt;</div>
+                            {/*:first-of-type*/}
+                            <div>&lt;[atrybut*="wartość"]&gt;</div>
+                            {/*atrybut zawierający*/}
+                            <div>&lt;element który nie jest&gt;</div>
+                            {/*:not(x)*/}
+                            <div>&lt;objekt mający atrybut&gt;</div>
+                            {/*[atribute]*/}
+                            <div>&lt;paragraf na div o id='id'&gt;</div>
+                            {/*#id  A*/}
+                            <div>&lt;atrybut o wartości 'coś'&gt;</div>
+                            {/*[attribute^="value"]*/}
+                            <div>&lt;empty div&gt;</div>
+                            {/*:empty*/}
+                            <div>&lt;[atrybut="wartość"]&gt;</div>
+                            {/*atrybut kończący się na*/}
+                            <div>&lt;wszystko będące na div&gt;</div>
+                            {/*A **/}
                         </div>
                     </section>
                     <section className="sectionAppThreeRight">
