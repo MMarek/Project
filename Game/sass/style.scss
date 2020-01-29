@@ -16,9 +16,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  //height: 100vh;
   font-family: "Lato", sans-serif;
-  //background: rgba(197, 255, 30, 0.76);
   background-image: url("../foto/fala2.png");
   background-color: white;
   background-size: cover;
@@ -52,20 +50,6 @@ a {
   border-top-right-radius: 4px;
 }
 
-//.mobile-menu .open-menu {
-//  background: url("https://upload.wikimedia.org/wikipedia/commons/b/b2/Hamburger_icon.svg");
-//  background-size: contain;
-//  background-repeat: no-repeat;
-//  width: 32px;
-//  height: 32px;
-//  display: block;
-//  color: transparent;
-//}
-
-//nav {
-//  transition: 3s;
-//}
-
 .mobile-menu nav {
   border-radius: 4px;
   position: absolute;
@@ -73,17 +57,13 @@ a {
   height: 100%;
   top: 0;
   left: 0;
-  //background: white;
   display: flex;
   justify-content: center;
   align-items: center;
   background: white;
   flex-direction: column;
   background-image: url("../foto/duck1.png");
-  //background-color: black;
   background-size: cover;
-  //width: 100%;
-  //position: absolute;
 }
 
 .mobile-menu nav ul {
@@ -95,21 +75,11 @@ a {
 
 .mobile-menu nav a {
   display: inline-block;
-  color: #524f4f;
+  //color: #524f4f;
   padding: 12px;
   //font-size: 1.4rem;
   font-weight: 700;
 }
-
-//.mobile-menu nav .close-menu {
-//margin-top: 60px;
-//text-decoration: none;
-//font-size: 0.8rem;
-//color: #fbbb21;
-//border: 2px solid #fbbb21;
-//padding: 8px 22px;
-//border-radius: 8px;
-//}
 
 .mobile-menu nav.hide {
   display: none;
@@ -122,26 +92,11 @@ a {
 }
 
 .backJeden {
-  //font-size: 40px;
-  //color: white;
-  //border-radius: 30%;
-  //margin-right: 10px;
-  //margin-left: 600px;
-  //margin-top: 100px;
-
-  //  font-size: 30px;
-  //  //color: white;
-  //  //border-radius: 40%;
-  //  //margin-right: 10px;
   margin-left: 490px;
   margin-top: 50px;
-  //background: black;
-  //color: gray;
-  //  //border: 30px solid #64c8ff;
   font-size: 40px;
   border-radius: 30%;
   width: 135px;
-  //margin-left: 420px;
   padding: 20px;
   border: 1px solid #8de4ff;
   background-color: white;
@@ -150,11 +105,7 @@ a {
 }
 
 .menuAppJedenDiv {
-  //width: 800px;
-  //height: 500px;
   border-radius: 4px;
-  //background: white;
-  //box-shadow: 0 0 8px 2px rgba(0, 0, 0, 0.3);
   position: relative;
   display: flex;
   justify-content: space-between;
@@ -164,10 +115,6 @@ a {
 .menuAppJeden-leftDiv {
   padding: 1px;
 }
-
-//.menuAppJeden-leftDiv div {
-//  display: none;
-//}
 
 .menuAppJedenDiv > div {
   width: 380px;
@@ -181,7 +128,6 @@ a {
 }
 
 .flexItem {
-  //border: 3px solid black;
   border-radius: 8px;
   padding: 10px;
   box-shadow: 1px 1px 3px 3px rgba(0, 0, 0, 0.3);
@@ -197,7 +143,6 @@ a {
 .menuAppJedenP {
   display: flex;
   justify-content: center;
-  //color: #524f4f;
   padding: 12px;
   font-size: 20px;
   font-weight: 700;
@@ -208,21 +153,16 @@ a {
   width: 100%;
 }
 
-
 .menuAppJeden-rightDiv input {
   height: 10%;
   width: 100%;
-  //padding-left: 80px;
 }
 
 .paragraf {
-  //margin-top: 15px;
   color: gray;
   text-align: center;
   font-size: 20px;
-  //font-family: "Lato", sans-serif;
   padding: 10px;
-  //border: 1px solid red;
   border-radius: 5px;
   box-shadow: 0 0 5px 3px rgba(0, 0, 0, 0.5);
 }
@@ -237,18 +177,7 @@ a {
   padding: 10px;
   display: flex;
   flex-direction: column;
-  //justify-content: space-between;
 }
-
-//.backDwa {
-//  font-size: 40px;
-//  color: white;
-//  border-radius: 40%;
-//  margin-right: 10px;
-  //margin-left: 100px;
-  //margin-top: 700px;
-  //color: gray;
-//}
 
 .menuAppDwaRodzic {
   width: 680px;
@@ -258,27 +187,12 @@ a {
   box-shadow: 0 0 8px 2px rgba(0, 0, 0, 0.3);
   position: relative;
   padding: 30px;
-  //display: flex;
-  //flex-direction: row;
-  //justify-content: space-between;
 }
 
 .box {
   display: flex;
   flex-direction: row;
-  //justify-content: space-around;
 }
-
-//.menuAppDwaRodzic div {
-  //margin-top: 60px;
-  //text-decoration: none;
-  //width: 30%;
-  //font-size: 2rem;
-  //color: black;
-  //border: 2px solid black;
-  //padding: 8px 22px;
-  //border-radius: 8px;
-//}
 
 .menuAppDwa input {
   width: 640px;
@@ -295,23 +209,17 @@ a {
   box-shadow: 0 0 8px 2px rgba(0, 0, 0, 0.3);
   border-radius: 5px;
   max-width: 100%;
-  //margin-left: 50px;
-  //margin-bottom: 50px;
-  //align-items: center;
 }
 
 .box2{
   display: flex;
   flex-direction: column;
   width: 250px;
-
-
 }
 
 .menuAppDwa button:first-of-type {
   box-shadow: 0 0 8px 2px rgba(0, 0, 0, 0.3);
   border-radius: 8px;
-  //margin-right: 20px;
   width: 200px;
   margin: 30px;
   height: 50px;
@@ -344,13 +252,6 @@ a {
   font-size: 20px;
 }
 
-//.menuAppDwa :last-child {
-  //border: 1px solid gray;
-  //border-radius: 5px;
-  //max-width: 50px;
-  //margin-left: 300px;
-//}
-
 .menuAppTrzy {
   width: 560px;
   height: 470px;
@@ -360,21 +261,7 @@ a {
   position: relative;
   padding: 30px;
   display: flex;
-  //justify-content: space-between;
-  //padding-right: 10px;
 }
-
-//.backTrzy {
-//  display: none;
-//  padding: 1px;
-  //font-size: 40px;
-  //background-color: black;
-  //border-radius: 30%;
-  //margin-right: 10px;
-  //margin-left: 90px;
-  //margin-top: 350px;
-  //color: gray;
-//}
 
 .menuAppTrzyTree {
   width: 240px;
@@ -382,7 +269,6 @@ a {
   border-radius: 5px;
   box-shadow: 0 0 5px 3px rgba(0, 0, 0, 0.5);
   padding: 20px;
-
 }
 
 .sectionAppThreeRight {
@@ -390,16 +276,10 @@ a {
   flex-direction: column;
 }
 
-//.sectionAppThreeRight div {
-//  font-size: 20px;
-//}
-
 .menuAppTrzy p {
-  //display: inline-block;
   color: #524f4f;
   padding-left: 55px;
   font-size: 20px;
-  //font-weight: 700;
 }
 
 .menuAppTrzy input {
@@ -425,30 +305,16 @@ a {
 }
 
 .sectionAppThreeRight div {
-  //margin-top: 15px;
   margin-top: 40px;
   margin-left: 25px;
   height: 210px;
   text-align: center;
   font-size: 20px;
   color: gray;
-  //font-family: "Lato", sans-serif;
   padding: 10px;
-  //border: 1px solid red;
   border-radius: 5px;
   box-shadow: 0 0 5px 3px rgba(0, 0, 0, 0.5);
 }
-
-//.sectionAppThreeRight :last-child {
-//  height: 300px;
-//  border-radius: 5px;
-//  font-size: 40px;
-//box-shadow: 0 0 0 1px rgba(1, 1, 1, 0.5);
-//padding: 30px;
-//margin-top: 30px;
-//font-size: 25px;
-//}
-
 
 .menuAppHepl {
   width: 800px;
@@ -457,11 +323,6 @@ a {
   background: white;
   box-shadow: 0 0 8px 2px rgba(0, 0, 0, 0.3);
   position: relative;
-  //padding: 30px;
-  //display: flex;
-  //flex-direction: column;
-  //justify-content: space-between;
-  //padding-right: 60px;
 }
 
 .menuAppHepl {
@@ -471,56 +332,18 @@ a {
 .menuAppHepl p {
   font-size: 20px;
   color: white;
-  //border: 1px solid #8de4ff;
-  //background-color: white;
-  //box-shadow: 0 0 8px 2px rgba(0, 0, 0, 1.3);
-  //padding: 20px;
-  //width: 180px;
-  //border-radius: 40%;
-  //margin-right: 10px;
   margin-left: 400px;
   margin-top: 50px;
-  //font-size: 30px;
 }
 
 .backHelp {
-//  font-size: 30px;
-//  //color: white;
-//  //border-radius: 40%;
-//  //margin-right: 10px;
   margin-left: 890px;
   margin-top: 350px;
-  //background: black;
-  //color: gray;
-//  //border: 30px solid #64c8ff;
   font-size: 40px;
   border-radius: 30%;
   width: 135px;
-  //margin-left: 420px;
   padding: 20px;
   border: 1px solid #8de4ff;
   background-color: white;
   box-shadow: 0 0 8px 2px rgba(0, 0, 0, 1.3);
-}
-
-//
-//.backHelp {
-//  color: gray;
-//  margin: 300px;
-//  border: 2px solid red;
-//  font-size: 40px;
-//  border-radius: 30%;
-//  width: 80px;
-//}
-
-.active {
-  //font-size: 40px;
-  //border-radius: 30%;
-  //width: 80px;
-  //margin-left: 420px;
-  //padding: 20px;
-  //border: 1px solid #8de4ff;
-  //background-color: white;
-  //box-shadow: 0 0 8px 2px rgba(0, 0, 0, 1.3);
-  //margin-top: 500px;
 }

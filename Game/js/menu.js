@@ -60,20 +60,20 @@ class Menu extends Component {
         console.log('klik trzy');
     };
 
-    handleButtonFourOn = () => {
-        this.setState({four: true});
-        console.log('najazd');
-    }
-
-    handleButtonFourOff = () => {
-        this.setState({four: false});
-        console.log('zjazd');
-    }
-
-    handleButtonFourClick = () => {
-        console.log('klik cztery');
-
-    }
+    // handleButtonFourOn = () => {
+    //     this.setState({four: true});
+    //     console.log('najazd');
+    // }
+    //
+    // handleButtonFourOff = () => {
+    //     this.setState({four: false});
+    //     console.log('zjazd');
+    // }
+    //
+    // handleButtonFourClick = () => {
+    //     console.log('klik cztery');
+    //
+    // }
 
     handleButtonFiveOn = () => {
         this.setState({five: true});
@@ -96,42 +96,34 @@ class Menu extends Component {
         const {one} = this.state;
         const {two} = this.state;
         const {three} = this.state;
-        const {four} = this.state;
+        // const {four} = this.state;
         const {five} = this.state;
 
         let styleButtonOne = {
             fontSize: one ? '100px' : '20px',
-            // height: one ? '20px' : '40px',
             color: one ? 'red' : 'black',
             transition: "5s",
         };
 
         let styleButtonTwo = {
             fontSize: two ? '100px' : '20px',
-            // height: two ? '20px' : '40px',
-            // color: one ? 'red' : 'black',
             transition: "5s",
         };
 
         let styleButtonThree = {
             fontSize: three ? '70px' : '20px',
-            // height: three ? '20px' : '40px',
-            // color: three ? 'red' : 'black',
             transition: "5s",
         };
 
-        let styleButtonFour = {
-            fontSize: four ? '100px' : '20px',
-            height: four ? '20px' : '40px',
-            // color: one ? 'red' : 'black',
-            transition: "5s",
-        };
+        // let styleButtonFour = {
+        //     fontSize: four ? '100px' : '20px',
+        //     height: four ? '20px' : '40px',
+            // transition: "5s",
+        // };
 
         let styleButtonFive = {
             fontSize: five ? '80px' : '20px',
             height: five ? '20px' : '40px',
-            // color: five ? 'red' : 'black',
-            // five ? '8px' : ' 20px',
             transition: "5s",
             // margin-top: 60px;
             // text-decoration: 'none';
